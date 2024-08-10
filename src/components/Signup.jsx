@@ -16,7 +16,9 @@ const Signup = ({ setIsAuthenticated }) => {
       });
 
       if (response.ok) {
-        toast.success('Signup successful! Redirecting to home...');
+        toast.success('Signup successful! You get a 20% discount on your first order.', {
+          duration: 5000, // Set duration to 5 seconds
+        });
         setIsAuthenticated(true); // Update the authentication state
         navigate('/'); // Redirect to home page
       } else {
@@ -42,7 +44,9 @@ const Signup = ({ setIsAuthenticated }) => {
         type="password"
         placeholder="Password"
         value={password}
-        onChange={(e) => setPassword(e.target.value)}
+        onChange={(e) => setPassword(e.target.value)
+        
+        }
       />
       <button onClick={handleSignup}>Sign Up</button>
     </div>
