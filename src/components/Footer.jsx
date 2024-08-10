@@ -12,7 +12,7 @@ const Footer = () => {
             <p>Developed By  Yash</p>
           </div>
           <div className="right">
-            <p>All Rights Reserved By YASH LAXWNAI</p>
+            <p>All Rights Reserved By YASH LAXWANI</p>
           </div>
         </div>
       </div>
