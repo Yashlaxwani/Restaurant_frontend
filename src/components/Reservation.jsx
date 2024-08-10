@@ -18,7 +18,7 @@ const Reservation = () => {//creating setstates
     e.preventDefault();//so, that page do not get reload
     try {
       const { data } = await axios.post(
-        "http://localhost:3000/api/v1/reservation/send",
+        "https://restaurant-8xdn.onrender.com/api/v1/reservation/send",
         { firstName, lastName, email, phone, date, time },//kya kya send karna hai database me
         {
           headers: {

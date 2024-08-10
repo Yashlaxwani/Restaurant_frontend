@@ -6,10 +6,10 @@ const Signup = ({ setIsAuthenticated }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
-
+  
   const handleSignup = async () => {
     try {
-      const response = await fetch('http://localhost:3000/auth/signup', {
+      const response = await fetch('https://restaurant-8xdn.onrender.com/auth/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password }),

@@ -5,7 +5,7 @@ const Logout = ({ onLogout }) => {
 
   const handleLogout = async () => {
     try {
-      const response = await fetch('http://localhost:3000/auth/logout', {
+      const response = await fetch('https://restaurant-8xdn.onrender.com/auth/logout', {
         method: 'GET',
       });
       const data = await response.json();
