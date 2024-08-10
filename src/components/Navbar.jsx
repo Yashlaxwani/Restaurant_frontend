@@ -47,7 +47,7 @@ const Navbar = ({ isAuthenticated, setIsAuthenticated }) => {
           ) : (
             <div className="auth-buttons">
               <button onClick={handleSignInClick} className="menuBtn">
-                Sign In
+                Sign Up
               </button>
               <button onClick={handleLoginClick} className="menuBtn">
                 Log In
